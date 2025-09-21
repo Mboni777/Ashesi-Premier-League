@@ -148,13 +148,26 @@ public class PlayerSelection {
 
         // Task 7 part 2: Grouped cases
         switch (jersey) {
-            case 1: System.out.println("Goalkeeper"); break;
-            case 2: case 3: case 4: case 5: System.out.println("defender"); break;
-            case 6: case 8: System.out.println("midfielder"); break;
-            case 7: case 11: System.out.println("winger"); break;
-            case 9: System.out.println("striker"); break;
-            case 10: System.out.println("playmaker"); break;
-            default: System.out.println("Player position not known");
+            case 1: 
+            System.out.println("Goalkeeper"); 
+            break;
+            case 2: case 3: case 4: case 5: 
+            System.out.println("defender"); 
+            break;
+            case 6: case 8: 
+            System.out.println("midfielder"); 
+            break;
+            case 7: case 11: 
+            System.out.println("winger");
+             break;
+            case 9: 
+            System.out.println("striker"); 
+            break;
+            case 10: 
+            System.out.println("playmaker");
+             break;
+            default: 
+            System.out.println("Player position not known");
         }
 
         // Task 8: Nested ifs
