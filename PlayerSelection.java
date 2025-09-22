@@ -205,17 +205,39 @@ public class PlayerSelection {
         System.out.println("Jersey: " + jersey);
 
         switch (jersey) {
-            case 1: System.out.println("Position: Goalkeeper"); break;
-            case 2: System.out.println("Position: defender"); break;
-            case 3: System.out.println("Position: defender"); break;
-            case 4: System.out.println("Position: defender"); break;
-            case 5: System.out.println("Position: defender"); break;
-            case 6: System.out.println("Position: midfielder"); break;
-            case 7: System.out.println("Position: winger"); break;
-            case 8: System.out.println("Position: midfielder"); break;
-            case 9: System.out.println("Position: striker"); break;
-            case 10: System.out.println("Position: playmaker"); break;
-            case 11: System.out.println("Position: winger"); break;
+            case 1: 
+            System.out.println("Position: Goalkeeper"); 
+            break;
+            case 2: 
+            System.out.println("Position: defender"); 
+            break;
+            case 3: 
+            System.out.println("Position: defender"); 
+            break;
+            case 4: 
+            System.out.println("Position: defender"); 
+            break;
+            case 5: 
+            System.out.println("Position: defender"); 
+            break;
+            case 6: 
+            System.out.println("Position: midfielder"); 
+            break;
+            case 7: 
+            System.out.println("Position: winger"); 
+            break;
+            case 8: 
+            System.out.println("Position: midfielder"); 
+            break;
+            case 9: 
+            System.out.println("Position: striker"); 
+            break;
+            case 10: 
+            System.out.println("Position: playmaker"); 
+            break;
+            case 11: 
+            System.out.println("Position: winger"); 
+            break;
             default: System.out.println("Position: not known");
         }
 
