@@ -12,7 +12,7 @@ public class PlayerSelection {
         int jersey;
 
         // constants for completing task 2
-        final double METER = 100.0;
+        final int METER = 100;
         final double POUND = 0.45359237;
 
         // Requesting the user for inputs
@@ -22,10 +22,10 @@ public class PlayerSelection {
         System.out.print("Enter player's age: ");
         age = input.nextInt();
 
-        System.out.print("Enter player's height (in meters): ");
+        System.out.print("Enter player's height in meters: ");
         heightMeters = input.nextDouble();
 
-        System.out.print("Enter player's weight (in lbs): ");
+        System.out.print("Enter player's weight in lbs: ");
         weightLbs = input.nextDouble();
 
         System.out.print("Enter player's jersey number: ");
@@ -40,7 +40,7 @@ public class PlayerSelection {
         System.out.println("Jersey Number - " + jersey);
 
         // Task 2: conversions
-        double heightCm = heightMeters * METER;
+        int heightCm = (int)(heightMeters * METER);
         double weightKg = weightLbs * POUND;
         int roundedWeight = (int) weightKg;   
 
@@ -79,7 +79,7 @@ public class PlayerSelection {
 
         // Task 5: Categorizing players based on age
         if (age < 20) {
-            System.out.println("Rising Star");
+    System.out.println("Rising Star");
         }
         else if (age >= 20 && age <= 30){
             System.out.println("Prime Player");
@@ -89,39 +89,52 @@ public class PlayerSelection {
         }
         else {
             System.out.println("May be error!!! or you entered something else not age");
-        }
+}
 
         // Task 6: Switch Cases (Basic)
         switch (jersey) {
-            case 1: System.out.println("Goalkeeper"); break;
-            case 2: System.out.println("defender"); break;
-            case 3: System.out.println("defender"); break;
-            case 4: System.out.println("defender"); break;
-            case 5: System.out.println("defender"); break;
-            case 6: System.out.println("midfielder"); break;
-            case 7: System.out.println("winger"); break;
-            case 8: System.out.println("midfielder"); break;
-            case 9: System.out.println("striker"); break;
-            case 10: System.out.println("playmaker"); break;
-            case 11: System.out.println("winger"); break;
-            default: System.out.println("Player position not known");
+            case 1: 
+             System.out.println("Goalkeeper"); 
+            break;
+          case 2: 
+            System.out.println("defender"); break;
+            case 3: 
+            System.out.println("defender"); break;
+            case 4: 
+             System.out.println("defender"); break;
+            case 5: 
+         System.out.println("defender"); break;
+            case 6: 
+              System.out.println("midfielder"); break;
+            case 7: 
+            System.out.println("winger"); break;
+    case 8: 
+            System.out.println("midfielder"); break;
+            case 9: 
+         System.out.println("striker"); break;
+            case 10: 
+            System.out.println("playmaker"); break;
+            case 11: 
+            System.out.println("winger"); break;
+            default: 
+            System.out.println("Player position not known");
         }
 
         // Task 7 part 1: Fall-Through (without break)
         switch (jersey) {
-            case 1:
+             case 1:
                 System.out.println("Goalkeeper");
                 break;
-            case 2:
-                System.out.println("defender");
+        case 2:
+                 System.out.println("defender");
                 // break;
-            case 3:
+             case 3:
                 System.out.println("defender");
-                break;
+          break;
             case 4:
                 System.out.println("defender");
                 break;
-            case 5:
+         case 5:
                 System.out.println("defender");
                 break;
             case 6:
@@ -130,10 +143,10 @@ public class PlayerSelection {
             case 7:
                 System.out.println("winger");
                 // break;
-            case 8:
+               case 8:
                 System.out.println("midfielder");
-                break;
-            case 9:
+                   break;
+        case 9:
                 System.out.println("striker");
                 break;
             case 10:
@@ -142,7 +155,7 @@ public class PlayerSelection {
             case 11:
                 System.out.println("winger");
                 break;
-            default:
+              default:
                 System.out.println("Player position not known");
         }
 
@@ -152,32 +165,33 @@ public class PlayerSelection {
             System.out.println("Goalkeeper"); 
             break;
             case 2: case 3: case 4: case 5: 
-            System.out.println("defender"); 
+         System.out.println("defender"); 
             break;
             case 6: case 8: 
-            System.out.println("midfielder"); 
+             System.out.println("midfielder"); 
             break;
             case 7: case 11: 
             System.out.println("winger");
-             break;
+               break;
             case 9: 
-            System.out.println("striker"); 
+     System.out.println("striker"); 
             break;
             case 10: 
             System.out.println("playmaker");
              break;
             default: 
-            System.out.println("Player position not known");
+  System.out.println("Player position not known");
         }
 
         // Task 8: Nested ifs
         if (age >= 20 && age <= 30) {
             if (roundedWeight < 80) {
-                System.out.println("Player in starting line up");
-            } else {
+                System.out.println("Player in starting line up"); } 
+            else {
                 System.out.println("Player on bench because of weigght");
             }
-        } else {
+        } 
+        else {
             System.out.println("Player on bench because of age");
         }
 
@@ -185,7 +199,7 @@ public class PlayerSelection {
         String playerfinalStatus = (eligibleToPlay) ? "Play": "Rest";
         System.out.println("Player's final status: " + playerfinalStatus);
 
-        // Task 10: Final Player Report
+        // Task 10: Final Player Report 
         System.out.println("\nFinal Player Report");
         System.out.println("Player: " + name);
         System.out.println("Age: " + age);
@@ -193,35 +207,34 @@ public class PlayerSelection {
         if (age < 20) {
             System.out.println("Category: Rising Star");
         } 
-        else if (age >= 20 && age <= 30) {
+    else if (age >= 20 && age <= 30) {
             System.out.println("Category: Prime Player");
         } 
         else {
-            System.out.println("Category: Veteran Player");
-        }
+            System.out.println("Category: Veteran Player");}
 
-        System.out.println("Height: " + (int)heightCm + " cm");
-        System.out.println("Weight: " + roundedWeight + " kg");
-        System.out.println("Jersey: " + jersey);
+System.out.println("Height: " + (int)heightCm + " cm");
+     System.out.println("Weight: " + roundedWeight + " kg");
+    System.out.println("Jersey: " + jersey);
 
         switch (jersey) {
             case 1: 
-            System.out.println("Position: Goalkeeper"); 
-            break;
+              System.out.println("Position: Goalkeeper"); 
+              break;
             case 2: 
             System.out.println("Position: defender"); 
             break;
-            case 3: 
-            System.out.println("Position: defender"); 
+              case 3: 
+              System.out.println("Position: defender"); 
             break;
             case 4: 
-            System.out.println("Position: defender"); 
+         System.out.println("Position: defender"); 
             break;
             case 5: 
-            System.out.println("Position: defender"); 
+        System.out.println("Position: defender"); 
             break;
             case 6: 
-            System.out.println("Position: midfielder"); 
+              System.out.println("Position: midfielder"); 
             break;
             case 7: 
             System.out.println("Position: winger"); 
@@ -230,41 +243,47 @@ public class PlayerSelection {
             System.out.println("Position: midfielder"); 
             break;
             case 9: 
-            System.out.println("Position: striker"); 
+         System.out.println("Position: striker"); 
             break;
             case 10: 
-            System.out.println("Position: playmaker"); 
+        System.out.println("Position: playmaker"); 
             break;
             case 11: 
-            System.out.println("Position: winger"); 
+    System.out.println("Position: winger"); 
             break;
             default: System.out.println("Position: not known");
         }
 
         if (jersey == 7 || jersey == 9 || jersey == 10 || jersey == 11) {
             System.out.println("Attacker jersey: Yes");
-        } else {
+        } 
+        else {
             System.out.println("Attacker jersey: No");
-        }
+    }
 
         if (eligibleToPlay) {
             System.out.println("Eligibility: Eligible");
-        } else {
+        } 
+        else {
             System.out.println("Eligibility: Not Eligible");
         }
 
         if (age >= 20 && age <= 30) {
             if (roundedWeight < 80) {
                 System.out.println("Lineup Decision: Starting lineup");
-            } else {
+            } 
+            else {
                 System.out.println("Lineup Decision: Bench");
             }
-        } else {
+        }
+         else {
             System.out.println("Lineup Decision: Bench");
         }
 
         System.out.println("Final Decision: " + playerfinalStatus);
 
+        
+        
         input.close();
     }
 }
