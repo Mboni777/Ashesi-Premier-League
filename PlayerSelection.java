@@ -88,7 +88,7 @@ public class PlayerSelection {
             System.out.println("Veteran Player");
         }
         else {
-            System.out.println("May be error!!! or you entered something else not age");
+            System.out.println("Can't be categorized due to invalid age");
 }
 
         // Task 6: Switch Cases (Basic)
